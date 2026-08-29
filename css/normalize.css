@@ -217,7 +217,7 @@ button::-moz-focus-inner,
 
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
+[type="reset"]:-moz-focu  sring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }

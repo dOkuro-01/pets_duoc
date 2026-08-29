@@ -1,159 +1,164 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "preload" href = "css/normalize.css" as = "stylesheet">
-    <link href = "css/normalize.css" rel = "stylesheet" type = "text/css">
-    <link rel = "preload" href = "css/styles.css" as = "stylesheet">
-    <link href = "css/styles.css" rel = "stylesheet" type = "text/css">
+    
+    <!-- Carga previa de estilos para mejorar el rendimiento de la página -->
+    <link rel="preload" href="css/normalize.css" as="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    
+    <link rel="preload" href="css/styles.css" as="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+    <!-- Encabezado principal del sitio web -->
     <header>
-        <h1 class = "titulo"> Grupo Michis Pets  <span> DuocUc </span></h1>
+        <h1>Grupo Michis Pets <span>DuocUc</span></h1>
     </header>
 
-        <div class="nav-bg">
->        <nav class = "navegacion-principal contenedor">
-            <a href="index"> Inicio </a>
-            <a href="servicios"> Servicios </a>
-            <a href="productos"> Adopciones </a>
-            <a href="referencias"> Referencias </a>
+    <!-- Barra de navegación con fondo morado oscuro (.nav-bg) -->
+    <div class="nav-bg">
+        <!-- Menú principal responsivo (.navegacion-principal) alineado con contenedor (.contenedor) -->
+        <nav class="navegacion-principal contenedor">
+            <a href="index">Inicio</a>
+            <a href="servicios">Servicios</a>
+            <a href="productos">Adopciones</a>
+            <a href="referencias">Referencias</a>
         </nav>
+    </div>
+
+    <!-- Sección principal 'Hero' con imagen de fondo -->
+    <section class="hero"> 
+        <!-- Capa con fondo oscuro y contenido centrado mediante Flexbox -->
+        <div class="contenido-hero">
+            <h2>Fundacion Pets</h2>
+            <p></p>
+            
+            <!-- Ubicación con icono SVG de mapa -->
+            <p>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="60"
+                    height="60"
+                    viewBox="0 0 24 24"
+                    fill="#F86014"
+                >
+                    <path d="M18.364 4.636a9 9 0 0 1 .203 12.519l-.203 .21l-4.243 4.242a3 3 0 0 1 -4.097 .135l-.144 -.135l-4.244 -4.243a9 9 0 0 1 12.728 -12.728zm-6.364 3.364a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z" />
+                </svg>
+                Santiago, Chile
+            </p>
+            
+            <!-- Botón de llamado a la acción con estilos personalizados (.boton) -->
+            <a class="boton" href="#">Contactar</a>
         </div>
-
-    <section>
-        <h2> Fundacion Pets </h2>
-        <p>
-
-        <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        viewBox="0 0 24 24"
-        fill="#ff9500"
-        >
-        <path d="M18.364 4.636a9 9 0 0 1 .203 12.519l-.203 .21l-4.243 4.242a3 3 0 0 1 -4.097 .135l-.144 -.135l-4.244 -4.243a9 9 0 0 1 12.728 -12.728zm-6.364 3.364a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z" />
-        </svg>
-
-        </p>
-        <p>Santiago, Chile</p>
-        <a href="#"> Contactar</a>
-
     </section>
 
-    
+    <!-- Contenido principal de la página web -->
     <main> 
         <h2>Nuestra Historia</h2>
         <p>
-        <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        viewBox="0 0 24 24"
-        fill="#ff9500"
-        >
-        <path d="M18.333 2c1.96 0 3.56 1.537 3.662 3.472l.005 .195v12.666c0 1.96 -1.537 3.56 -3.472 3.662l-.195 .005h-12.666a3.667 3.667 0 0 1 -3.662 -3.472l-.005 -.195v-12.666c0 -1.96 1.537 -3.56 3.472 -3.662l.195 -.005h12.666zm-10.333 9h-2l-.117 .007a1 1 0 0 0 .117 1.993h2l.117 -.007a1 1 0 0 0 -.117 -1.993zm4 -3h-6l-.117 .007a1 1 0 0 0 .117 1.993h6l.117 -.007a1 1 0 0 0 -.117 -1.993zm-2 -3h-4l-.117 .007a1 1 0 0 0 .117 1.993h4l.117 -.007a1 1 0 0 0 -.117 -1.993z" />
-        </svg>
-
-        </p>
-            <p>
-                Inspirados por nuestra pasión por los animales, en especial los felinos, construimos esta plataforma para apoyar el 
-                bienestar animal. Somos un espacio dedicado a ofrecer un refugio temporal y seguro para gatitos en busca de una familia
-                para siempre
-            </p>
-
-        <section>
-
-        <h3>Año de creacion</h3>
-        <p>
-        <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        viewBox="0 0 24 24"
-        fill="#ff9500"
-        >
-        <path d="M16 2a1 1 0 0 1 .993 .883l.007 .117v1h1a3 3 0 0 1 2.995 2.824l.005 .176v12a3 3 0 0 1 -2.824 2.995l-.176 .005h-12a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-12a3 3 0 0 1 2.824 -2.995l.176 -.005h1v-1a1 1 0 0 1 1.993 -.117l.007 .117v1h6v-1a1 1 0 0 1 1 -1zm3 7h-14v9.625c0 .705 .386 1.286 .883 1.366l.117 .009h12c.513 0 .936 -.53 .993 -1.215l.007 -.16v-9.625z" />
-        <path d="M12 12a1 1 0 0 1 .993 .883l.007 .117v3a1 1 0 0 1 -1.993 .117l-.007 -.117v-2a1 1 0 0 1 -.117 -1.993l.117 -.007h1z" />
-        </svg>
-        </p>
-            <p>
-                21-08-2026
-            </p>
-        </section>
-        <section>
-
-        <h3>Fundadores</h3>
-        <p>
+            <!-- Icono SVG descriptivo -->
             <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#ff9500"
-            stroke-width="1"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="#F86014"
             >
-            <path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-            <path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1" />
-            <path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-            <path d="M17 10h2a2 2 0 0 1 2 2v1" />
-            <path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-            <path d="M3 13v-1a2 2 0 0 1 2 -2h2" />
+                <path d="M18.333 2c1.96 0 3.56 1.537 3.662 3.472l.005 .195v12.666c0 1.96 -1.537 3.56 -3.472 3.662l-.195 .005h-12.666a3.667 3.667 0 0 1 -3.662 -3.472l-.005 -.195v-12.666c0 -1.96 1.537 -3.56 3.472 -3.662l.195 -.005h12.666zm-10.333 9h-2l-.117 .007a1 1 0 0 0 .117 1.993h2l.117 -.007a1 1 0 0 0 -.117 -1.993zm4 -3h-6l-.117 .007a1 1 0 0 0 .117 1.993h6l.117 -.007a1 1 0 0 0 -.117 -1.993zm-2 -3h-4l-.117 .007a1 1 0 0 0 .117 1.993h4l.117 -.007a1 1 0 0 0 -.117 -1.993z" />
             </svg>
         </p>
         <p>
-            - Krishna Aranguiz
-        </p>  
-            - Xaviera Bradanovich
-        <p>
-            - David Fuentes
+            Inspirados por nuestra pasión por los animales, en especial los felinos, construimos esta plataforma para apoyar el 
+            bienestar animal. Somos un espacio dedicado a ofrecer un refugio temporal y seguro para gatitos en busca de una familia
+            para siempre.
         </p>
+
+        <!-- Subsección: Fecha de creación -->
+        <section>
+            <h3>Año de creacion</h3>
+            <p>
+                <!-- Icono SVG de calendario -->
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="#F86014"
+                >
+                    <path d="M16 2a1 1 0 0 1 .993 .883l.007 .117v1h1a3 3 0 0 1 2.995 2.824l.005 .176v12a3 3 0 0 1 -2.824 2.995l-.176 .005h-12a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-12a3 3 0 0 1 2.824 -2.995l.176 -.005h1v-1a1 1 0 0 1 1.993 -.117l.007 .117v1h6v-1a1 1 0 0 1 1 -1zm3 7h-14v9.625c0 .705 .386 1.286 .883 1.366l.117 .009h12c.513 0 .936 -.53 .993 -1.215l.007 -.16v-9.625z" />
+                    <path d="M12 12a1 1 0 0 1 .993 .883l.007 .117v3a1 1 0 0 1 -1.993 .117l-.007 -.117v-2a1 1 0 0 1 -.117 -1.993l.117 -.007h1z" />
+                </svg>
+            </p>
+            <p>21-08-2026</p>
         </section>
 
+        <!-- Subsección: Lista de fundadores del proyecto -->
+        <section>
+            <h3>Fundadores</h3>
+            <p>
+                <!-- Icono SVG de equipo/usuarios -->
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#F86014"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                >
+                    <path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                    <path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1" />
+                    <path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                    <path d="M17 10h2a2 2 0 0 1 2 2v1" />
+                    <path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                    <path d="M3 13v-1a2 2 0 0 1 2 -2h2" />
+                </svg>
+            </p>
+            <p>- Krishna Aranguiz</p>  
+            <p>- Xaviera Bradanovich</p>
+            <p>- David Fuentes</p>
+        </section>
     </main>
     
+    <!-- Formulario de contacto -->
     <section> 
-    <h2> Contacto </h2>
-    <form>
-        <fieldset>
-            <legend>Contactos llenando todos los campos</legend>
+        <h2>Contacto</h2>
+        <form>
+            <fieldset>
+                <legend>Contactos llenando todos los campos</legend>
 
-            <div>   
-            <label>Nombre</label>
-            <input type = "text" placeholder = "Nombre" required>
-            </div>
+                <div>   
+                    <label>Nombre</label>
+                    <input type="text" placeholder="Nombre" required>
+                </div>
 
-            <div>   
-            <label>Numero  </label>
-            <input type = "tel" placeholder = "Número de teléfono" required>
-            </div>
+                <div>   
+                    <label>Numero</label>
+                    <input type="tel" placeholder="Número de teléfono" required>
+                </div>
 
-            <div> 
-            <label>Correo</label>
-            <input type = "email" placeholder = "Correo electrónico" required>
-            </div>
+                <div> 
+                    <label>Correo</label>
+                    <input type="email" placeholder="Correo electrónico" required>
+                </div>
 
-            <div> 
-            <label>Mensaje</label>
-            <textarea placeholder = "Escribe tu mensaje aquí" required></textarea>
-            <input type = "submit" value = "Enviar">
-            </div>
-
-        </fieldset>
-    </form>
+                <div> 
+                    <label>Mensaje</label>
+                    <textarea placeholder="Escribe tu mensaje aquí" required></textarea>
+                    <input type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
     </section>
 
+    <!-- Pie de página con derechos reservados -->
     <footer>
-        <p> Todos los derechos reservados David Fuentes </p>
+        <p>Todos los derechos reservados David Fuentes</p>
     </footer>
-
-    
-    
 </body>
-
+</html>
