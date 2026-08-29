@@ -127,7 +127,8 @@ h1, h2, h3{ /**Define tamaños descendentes para los títulos y los centra a tod
     position: relative; 
 }
 
-.contenido-hero {
+.contenido-hero {/**Crea una capa negra semitransparente al 70% de opacidad (rgb(0 0 0 / 70%)) 
+    superpuesta sobre la imagen, centrando todo el texto vertical y horizontalmente usando Flexbox.**/
     position: absolute;
     background-color: rgb(0 0 0 / 70%);
     text-align: center;
@@ -140,7 +141,8 @@ h1, h2, h3{ /**Define tamaños descendentes para los títulos y los centra a tod
     align-items: center;
     justify-content: center;
 }
-.contenido-hero h2, /** **/ 
+.contenido-hero h2, /**Asegura que el título y 
+el párrafo dentro de la sección Hero sean siempre de color blanco para mantener el contraste. **/ 
 .contenido-hero p{
     color: var(--blanco);
 }
