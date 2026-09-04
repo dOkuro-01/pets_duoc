@@ -30,10 +30,10 @@
     </div>
 
     <!-- Sección principal 'Hero' con imagen de fondo -->
-    <section class="hero"> 
+    <section class="hero">
         <!-- Capa con fondo oscuro y contenido centrado mediante Flexbox -->
         <div class="contenido-hero">
-            <h2>Grupo Michis Duoc  </h2>
+            <h2><Strong>Grupo Michis Duoc</Strong></h2>
             <p></p>
             
             <!-- Ubicación con icono SVG de mapa -->
@@ -43,7 +43,7 @@
                     width="60"
                     height="60"
                     viewBox="0 0 24 24"
-                    fill="#F86014"
+                    fill="#dad87a"
                 >
                     <path d="M18.364 4.636a9 9 0 0 1 .203 12.519l-.203 .21l-4.243 4.242a3 3 0 0 1 -4.097 .135l-.144 -.135l-4.244 -4.243a9 9 0 0 1 12.728 -12.728zm-6.364 3.364a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z" />
                 </svg>
@@ -65,7 +65,7 @@
                 width="32"
                 height="32"
                 viewBox="0 0 24 24"
-                fill="#F86014"
+                fill="#dad87a"
             >
                 <path d="M18.333 2c1.96 0 3.56 1.537 3.662 3.472l.005 .195v12.666c0 1.96 -1.537 3.56 -3.472 3.662l-.195 .005h-12.666a3.667 3.667 0 0 1 -3.662 -3.472l-.005 -.195v-12.666c0 -1.96 1.537 -3.56 3.472 -3.662l.195 -.005h12.666zm-10.333 9h-2l-.117 .007a1 1 0 0 0 .117 1.993h2l.117 -.007a1 1 0 0 0 -.117 -1.993zm4 -3h-6l-.117 .007a1 1 0 0 0 .117 1.993h6l.117 -.007a1 1 0 0 0 -.117 -1.993zm-2 -3h-4l-.117 .007a1 1 0 0 0 .117 1.993h4l.117 -.007a1 1 0 0 0 -.117 -1.993z" />
             </svg>
@@ -73,12 +73,15 @@
         <p>
             Inspirados por nuestra pasión por los animales, en especial los felinos, construimos esta plataforma para apoyar el 
             bienestar animal. Somos un espacio dedicado a ofrecer un refugio temporal y seguro para gatitos en busca de una familia
-            para siempre.
+            para siempre. Ademas de ser una plataforma web informativa y de gestión comunitaria dedicada a facilitar la adopción responsable de 
+            gatos rescatados. El proyecto busca conectar a refugios y rescatistas independientes con personas interesadas en brindar un 
+            hogar definitivo a felinos en situación de vulnerabilidad. A través de una interfaz amigable, limpia y accesible, el sitio permite
+            visibilizar los casos de adopción, compartir información detallada de cada mascota y centralizar las solicitudes de los futuros adoptantes.
         </p>
 
         <!-- Subsección: Fecha de creación -->
         <section>
-            <h3>Año de creacion</h3>
+            <h3>Lista de requisitos</h3>
             <p>
                 <!-- Icono SVG de calendario -->
                 <svg
@@ -86,13 +89,19 @@
                     width="32"
                     height="32"
                     viewBox="0 0 24 24"
-                    fill="#F86014"
+                    fill="#dad87a"
                 >
                     <path d="M16 2a1 1 0 0 1 .993 .883l.007 .117v1h1a3 3 0 0 1 2.995 2.824l.005 .176v12a3 3 0 0 1 -2.824 2.995l-.176 .005h-12a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-12a3 3 0 0 1 2.824 -2.995l.176 -.005h1v-1a1 1 0 0 1 1.993 -.117l.007 .117v1h6v-1a1 1 0 0 1 1 -1zm3 7h-14v9.625c0 .705 .386 1.286 .883 1.366l.117 .009h12c.513 0 .936 -.53 .993 -1.215l.007 -.16v-9.625z" />
                     <path d="M12 12a1 1 0 0 1 .993 .883l.007 .117v3a1 1 0 0 1 -1.993 .117l-.007 -.117v-2a1 1 0 0 1 -.117 -1.993l.117 -.007h1z" />
                 </svg>
             </p>
-            <p>21-08-2026</p>
+            <p>Lista de requisitos
+            <ul>
+                <li>Cumplir con la mayoría de edad: Ser mayor de 18 o 21 años y presentar documento de identidad.</li>
+                <li>Consentimiento familiar: Aprobación de todos los miembros del hogar o del arrendador para tener una mascota.</li>
+                <li>Compromiso veterinario: Aceptar el compromiso de esterilización a la edad adecuada, vacunación anual y controles de salud periódicos.</li>
+                <li>Solvencia básica: Capacidad económica para costear alimento adecuado, arena sanitaria y atención veterinaria imprevista.</li>
+            </ul></p>
         </section>
 
         <!-- Subsección: Lista de fundadores del proyecto -->
@@ -106,7 +115,7 @@
                     height="32"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="#F86014"
+                    stroke="#dad87a"
                     stroke-width="1"
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -147,11 +156,26 @@
                     <input type="email" placeholder="Correo electrónico" required>
                 </div>
 
-                <div> 
+                <div>
+                    <Label>tipo de vivienda</Label>
+                    <select name="tipo-vivienda" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="casa">Casa</option>
+                        <option value="apartamento">Apartamento</option>
+                        <option value="otro">Otro</option>
+                        
+                    </select>  
+                </div>
+                
+                <div>
+                     <input type="submit" value="Enviar">
+                </div>
+
+            <!---/// <div> 
                     <label>Mensaje</label>
                     <textarea placeholder="Escribe tu mensaje aquí" required></textarea>
                     <input type="submit" value="Enviar">
-                </div>
+                </div> -->
             </fieldset>
         </form>
     </section>
