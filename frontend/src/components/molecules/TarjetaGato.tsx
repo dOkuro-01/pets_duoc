@@ -1,17 +1,22 @@
-import Boton from '../atoms/Boton'
+import { Link } from 'react-router-dom'
 
 interface TarjetaGatoProps {
+  id: number
   nombre: string
   descripcion: string
 }
 
-function TarjetaGato({ nombre, descripcion }: TarjetaGatoProps) {
+function TarjetaGato({ id, nombre, descripcion }: TarjetaGatoProps) {
   return (
     <article className="card">
       <div className="card-body">
         <h2 className="card-title">{nombre}</h2>
+
         <p className="card-text">{descripcion}</p>
-        <Boton texto="Ver detalle" />
+
+        <Link to={`/adopciones/${id}`} className="btn btn-primary">
+          Ver detalle
+        </Link>
       </div>
     </article>
   )
