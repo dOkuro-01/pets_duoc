@@ -17,6 +17,10 @@ function Navbar() {
             Adopciones
           </NavLink>
 
+          <NavLink to="/servicios" className="nav-link">
+            Servicios
+          </NavLink>
+
           <NavLink to="/contacto" className="nav-link">
             Contacto
           </NavLink>
