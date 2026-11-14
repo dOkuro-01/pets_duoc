@@ -15,6 +15,7 @@ function Adopciones() {
               id={gato.id}
               nombre={gato.nombre}
               descripcion={gato.descripcion}
+              imagen={gato.imagen}
             />
           </div>
         ))}

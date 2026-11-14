@@ -18,7 +18,16 @@ function DetalleGato() {
   return (
     <section>
       <h1>{gato.nombre}</h1>
+
       <p>{gato.descripcion}</p>
+
+      <p>
+        <strong>Edad:</strong> {gato.edad}
+      </p>
+
+      <p>
+        <strong>Sexo:</strong> {gato.sexo}
+      </p>
 
       <Link to="/adopciones" className="btn btn-secondary">
         Volver al catálogo
