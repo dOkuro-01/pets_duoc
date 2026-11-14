@@ -14,7 +14,7 @@ export const gatos: Gato[] = [
     descripcion: 'Una gatita cariñosa que busca una familia.',
     edad: '4 meses',
     sexo: 'Hembra',
-    imagen: '/img/luna.jfif',
+    imagen: `${import.meta.env.BASE_URL}img/luna.jfif`,
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ export const gatos: Gato[] = [
     descripcion: 'Un gatito juguetón que disfruta de la compañía.',
     edad: '1 año',
     sexo: 'Macho',
-    imagen: '/img/simon.jfif',
+    imagen: `${import.meta.env.BASE_URL}img/simon.jfif`,
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ export const gatos: Gato[] = [
     descripcion: 'Una gatita tranquila que disfruta descansar al sol.',
     edad: '3 años',
     sexo: 'Hembra',
-    imagen: '/img/mila.jfif',
+    imagen: `${import.meta.env.BASE_URL}img/mila.jfif`,
   },
   {
     id: 4,
@@ -38,6 +38,6 @@ export const gatos: Gato[] = [
     descripcion: 'Un gatito curioso al que le encanta explorar.',
     edad: '1 año',
     sexo: 'Macho',
-    imagen: '/img/tomas.jpeg',
+    imagen: `${import.meta.env.BASE_URL}img/tomas.jpeg`,
   },
 ]

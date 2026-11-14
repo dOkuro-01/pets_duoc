@@ -11,30 +11,65 @@ function App() {
     <>
       <Navbar />
 
-      <main className="container py-5">
+      <main>
         <Routes>
           <Route
             path="/"
             element={
-              <section>
-                <h1>PawCats — Adopción de gatitos</h1>
+              <section className="hero-inicio">
+                <div className="hero-contenido container">
+                  <p className="hero-etiqueta">Adopción responsable</p>
 
-                <p>
-                  Conectamos gatitos rescatados con familias que les den un
-                  hogar.
-                </p>
+                  <h1>PawCats</h1>
 
-                <Link to="/adopciones" className="btn btn-primary">
-                  Conocer a los gatitos
-                </Link>
+                  <p className="hero-texto">
+                    Encontramos hogares llenos de cariño para gatitos
+                    rescatados.
+                  </p>
+
+                  <Link to="/adopciones" className="btn btn-primary btn-lg">
+                    Conocer gatitos
+                  </Link>
+                </div>
               </section>
             }
           />
 
-          <Route path="/adopciones" element={<Adopciones />} />
-          <Route path="/adopciones/:id" element={<DetalleGato />} />
-          <Route path="/contacto" element={<Contacto />} />
-          <Route path="/servicios" element={<Servicios />} />
+          <Route
+            path="/adopciones"
+            element={
+              <main className="container py-5">
+                <Adopciones />
+              </main>
+            }
+          />
+
+          <Route
+            path="/adopciones/:id"
+            element={
+              <main className="container py-5">
+                <DetalleGato />
+              </main>
+            }
+          />
+
+          <Route
+            path="/servicios"
+            element={
+              <main className="container py-5">
+                <Servicios />
+              </main>
+            }
+          />
+
+          <Route
+            path="/contacto"
+            element={
+              <main className="container py-5">
+                <Contacto />
+              </main>
+            }
+          />
         </Routes>
       </main>
     </>

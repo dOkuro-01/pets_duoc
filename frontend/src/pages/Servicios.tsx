@@ -1,49 +1,52 @@
 function Servicios() {
+  const servicios = [
+    {
+      icono: '🐾',
+      titulo: 'Adopción responsable',
+      texto:
+        'Orientamos a las familias para que conozcan los cuidados y compromisos antes de adoptar.',
+    },
+    {
+      icono: '🩺',
+      titulo: 'Atención veterinaria',
+      texto:
+        'Promovemos controles veterinarios, vacunación y esterilización para nuestros gatitos.',
+    },
+    {
+      icono: '💜',
+      titulo: 'Acompañamiento',
+      texto:
+        'Entregamos información para ayudar a cada familia durante el proceso de adopción.',
+    },
+  ]
+
   return (
-    <section>
-      <h1>Servicios</h1>
+    <section className="servicios-pagina">
+      <div className="servicios-encabezado">
+        <p className="hero-etiqueta">Cómo ayudamos</p>
 
-      <p>
-        En PawCats apoyamos la adopción responsable y el bienestar de los
-        gatitos rescatados.
-      </p>
+        <h1>Servicios PawCats</h1>
 
-      <div className="row g-4 mt-3">
-        <div className="col-12 col-md-4">
-          <article className="card h-100">
-            <div className="card-body">
-              <h2 className="h4">Adopción responsable</h2>
-              <p>
-                Orientamos a las familias para que conozcan los cuidados y
-                compromisos antes de adoptar.
-              </p>
-            </div>
-          </article>
-        </div>
+        <p>
+          Acompañamos a cada gatito y a cada familia durante todo el proceso de
+          adopción.
+        </p>
+      </div>
 
-        <div className="col-12 col-md-4">
-          <article className="card h-100">
-            <div className="card-body">
-              <h2 className="h4">Atención veterinaria</h2>
-              <p>
-                Promovemos controles veterinarios, vacunación y esterilización
-                para nuestros gatitos.
-              </p>
-            </div>
-          </article>
-        </div>
+      <div className="row g-4 mt-4">
+        {servicios.map((servicio) => (
+          <div className="col-12 col-md-4" key={servicio.titulo}>
+            <article className="service-card h-100">
+              <div className="service-icon" aria-hidden="true">
+                {servicio.icono}
+              </div>
 
-        <div className="col-12 col-md-4">
-          <article className="card h-100">
-            <div className="card-body">
-              <h2 className="h4">Acompañamiento</h2>
-              <p>
-                Entregamos información para ayudar a cada familia durante el
-                proceso de adopción.
-              </p>
-            </div>
-          </article>
-        </div>
+              <h2>{servicio.titulo}</h2>
+
+              <p>{servicio.texto}</p>
+            </article>
+          </div>
+        ))}
       </div>
     </section>
   )
