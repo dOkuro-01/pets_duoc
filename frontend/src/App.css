@@ -1,0 +1,120 @@
+:root {
+  --morado-oscuro: #5b5e8c;
+  --morado: #a383fe;
+  --morado-claro: #ede8ff;
+  --amarillo: #dad87a;
+  --blanco: #ffffff;
+}
+
+.hero-inicio {
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(rgba(91, 94, 140, 0.72), rgba(163, 131, 254, 0.82)),
+    url('/img/luna.jfif') center / cover;
+  color: var(--blanco);
+}
+
+.hero-contenido {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.hero-etiqueta {
+  color: var(--amarillo);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+}
+
+.hero-inicio h1 {
+  color: var(--blanco);
+  font-size: clamp(3.5rem, 8vw, 6rem);
+  font-weight: 700;
+}
+
+.hero-texto {
+  max-width: 560px;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  background-color: var(--morado-oscuro);
+  border-color: var(--morado-oscuro);
+}
+
+.btn-primary:hover {
+  background-color: #45486f;
+  border-color: #45486f;
+}
+
+.card {
+  border: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0.4rem 1.2rem rgba(91, 94, 140, 0.2);
+}
+
+.card-body {
+  background-color: var(--blanco);
+}
+
+h1,
+h2 {
+  color: var(--morado-oscuro);
+}
+
+.servicios-pagina {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.servicios-encabezado {
+  padding: 3rem;
+  border-radius: 1.5rem;
+  color: var(--blanco);
+  background: linear-gradient(135deg, #5b5e8c, #a383fe);
+  text-align: center;
+}
+
+.servicios-encabezado h1 {
+  color: var(--blanco);
+  margin-bottom: 1rem;
+}
+
+.servicios-encabezado p:last-child {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.service-card {
+  padding: 2.5rem 2rem;
+  border-radius: 1.2rem;
+  background: var(--blanco);
+  text-align: center;
+  box-shadow: 0 0.4rem 1.2rem rgba(91, 94, 140, 0.2);
+}
+
+.service-icon {
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  background-color: var(--morado-claro);
+  font-size: 3.5rem;
+}
+
+.service-card h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  line-height: 1.6;
+  margin-bottom: 0;
+}
